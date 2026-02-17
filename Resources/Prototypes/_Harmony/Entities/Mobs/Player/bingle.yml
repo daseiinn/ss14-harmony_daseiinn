@@ -143,7 +143,6 @@
     damageContainer: Biological
     damageModifierSet: BingleUpgraded
 
-
 - type: entity
   parent: MobBingleUpgraded
   id: MobBinglePrimeUpgraded
