@@ -98,6 +98,8 @@
         Burn: -0.5
   - type: FlashImmunity
   - type: Bingle
+  - type: Insulated
+    coefficient: .5
 
 - type: entity
   parent: MobBingle
@@ -120,6 +122,8 @@
   suffix: Upgraded
   description: More bingle per bingle.
   components:
+  - type: Insulated
+    coefficient: 0
   - type: Sprite
     sprite: _Harmony/Mobs/Aliens/Bingles/bingle_upgraded.rsi
   - type: Bingle
@@ -138,6 +142,7 @@
   - type: Damageable
     damageContainer: Biological
     damageModifierSet: BingleUpgraded
+
 
 - type: entity
   parent: MobBingleUpgraded
