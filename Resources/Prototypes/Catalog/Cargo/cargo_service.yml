@@ -237,15 +237,3 @@
   cost: 500
   category: cargoproduct-category-name-service
   group: market
-
-# Harmony Change Begin - Adds High Capacity Water Tanks to be purchasable by cargo
-- type: cargoProduct
-  id: WaterTankHighCapacity
-  icon:
-    sprite: Structures/Storage/tanks.rsi
-    state: watertank
-  product: WaterTankHighCapacity
-  cost: 1500
-  category: cargoproduct-category-name-materials
-  group: market
-# Harmony Change End
