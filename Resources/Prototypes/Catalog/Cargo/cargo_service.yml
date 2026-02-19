@@ -237,6 +237,7 @@
   cost: 500
   category: cargoproduct-category-name-service
   group: market
+
 # Harmony Change Begin - Adds High Capacity Water Tanks to be purchasable by cargo
 - type: cargoProduct
   id: WaterTankHighCapacity
