@@ -2,7 +2,7 @@
   id: WaterTankHighCapacity
   icon:
     sprite: Structures/Storage/tanks.rsi
-    state: watertank
+    state: highwatertank
   product: WaterTankHighCapacity
   cost: 2500
   category: cargoproduct-category-name-materials
