@@ -411,19 +411,27 @@
       children:
       - id: MobCarpSalvage
         weight: 2
-      - !type:AllSelector
-        weight: 1
-        children:
-        - id: LandMineExplosive
-        - !type:NestedSelector # what's that thing underneath the scrap?
-          prob: 0.33
-          tableId: SalvageScrapSpawnerCommon
+      # Harmony Change - Removes landmines from salvage spawners
+      # - !type:AllSelector
+        # weight: 1
+        # children:
+        #- id: LandMineExplosive
+        #- !type:NestedSelector # what's that thing underneath the scrap?
+        #  prob: 0.33
+        #  tableId: SalvageScrapSpawnerCommon
+      # Harmony Change End
     - !type:GroupSelector # scary monsters
       weight: 5
       children:
       - !type:AllSelector
         children:
         - id: MobSharkSalvage
+        # Harmony Change - Adds various space fauna to the MagnetMobTable
+        - id: MobBearSpaceSalvage
+        - id: MobKangarooSpaceSalvage
+        - id: MobTickSalvage
+        - id: MobFleshClampSalvage
+        # Harmony Change End
         - id: MobCarpSalvage
           amount: 2
         - !type:NestedSelector
