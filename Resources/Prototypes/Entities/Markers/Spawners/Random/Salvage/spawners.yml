@@ -426,12 +426,6 @@
       - !type:AllSelector
         children:
         - id: MobSharkSalvage
-        # Harmony Change - Adds various space fauna to the MagnetMobTable
-        - id: MobBearSpaceSalvage
-        - id: MobKangarooSpaceSalvage
-        - id: MobTickSalvage
-        - id: MobFleshClampSalvage
-        # Harmony Change End
         - id: MobCarpSalvage
           amount: 2
         - !type:NestedSelector
