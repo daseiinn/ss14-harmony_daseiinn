@@ -436,6 +436,7 @@
           tableId: TreasureCoinPileRare
       #- id: MobHivebot (solo hivebot spawn)
 
+
 - type: entity
   parent: MarkerBase
   id: SalvageSpawnerMobMagnet
