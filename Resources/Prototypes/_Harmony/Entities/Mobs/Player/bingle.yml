@@ -138,10 +138,10 @@
         Blunt: 14
         Structural: 28
   - type: Damageable
-  - type: Insulated
-    coefficient: 0
     damageContainer: Biological
     damageModifierSet: BingleUpgraded
+  - type: Insulated
+    coefficient: 0
 
 - type: entity
   parent: MobBingleUpgraded
