@@ -122,8 +122,6 @@
   suffix: Upgraded
   description: More bingle per bingle.
   components:
-  - type: Insulated
-    coefficient: 0
   - type: Sprite
     sprite: _Harmony/Mobs/Aliens/Bingles/bingle_upgraded.rsi
   - type: Bingle
@@ -140,6 +138,8 @@
         Blunt: 14
         Structural: 28
   - type: Damageable
+  - type: Insulated
+    coefficient: 0
     damageContainer: Biological
     damageModifierSet: BingleUpgraded
 
