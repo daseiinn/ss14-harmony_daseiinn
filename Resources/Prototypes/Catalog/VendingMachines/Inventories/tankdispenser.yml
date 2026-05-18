@@ -3,6 +3,8 @@
   startingInventory:
     OxygenTankFilled: 10
     NitrogenTankFilled: 10
+    EmergencyOxygenTankFilled: 10
+    EmergencyNitrogenTankFilled: 10
 
 - type: vendingMachineInventory
   id: TankDispenserEngineeringInventory
