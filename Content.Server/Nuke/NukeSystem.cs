@@ -22,7 +22,6 @@ using Robust.Shared.Map.Components;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
 using Robust.Shared.Timing;
-using Content.Shared.Mobs;
 
 namespace Content.Server.Nuke;
 
