@@ -22,6 +22,7 @@ using Robust.Shared.Map.Components;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
 using Robust.Shared.Timing;
+using Content.Shared.Mobs;
 
 namespace Content.Server.Nuke;
 
@@ -45,6 +46,7 @@ public sealed class NukeSystem : EntitySystem
     [Dependency] private readonly AppearanceSystem _appearance = default!;
     [Dependency] private readonly TurfSystem _turf = default!;
     [Dependency] private readonly IGameTiming _timing = default!;
+    [Dependency] private readonly AmbientSoundSystem _ambient = default!;
 
     /// <summary>
     ///     Used to calculate when the nuke song should start playing for maximum kino with the nuke sfx
@@ -513,6 +515,8 @@ public sealed class NukeSystem : EntitySystem
         _pointLight.SetEnabled(uid, true);
         // enable the navmap beacon for people to find it
         _navMap.SetBeaconEnabled(uid, true);
+        // Harmony Change - turn on ticking after arm
+        _ambient.SetAmbience(uid, true);
 
         _itemSlots.SetLock(uid, component.DiskSlot, true);
         if (!nukeXform.Anchored)
@@ -561,6 +565,8 @@ public sealed class NukeSystem : EntitySystem
         _pointLight.SetEnabled(uid, false);
         // disable the navmap beacon now that its disarmed
         _navMap.SetBeaconEnabled(uid, false);
+        // Harmony Change - turn off ticking after disarm
+        _ambient.SetAmbience(uid, false);
 
         // start bomb cooldown
         _itemSlots.SetLock(uid, component.DiskSlot, false);

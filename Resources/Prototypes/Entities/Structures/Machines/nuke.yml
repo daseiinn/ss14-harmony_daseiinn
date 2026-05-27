@@ -117,6 +117,14 @@
       tags:
       - GhostOnlyWarp
   - type: FTLSmashImmune
+  # Harmony Change - adds ticking to armed nukes
+  - type: AmbientSound
+    enabled: false
+    range: 8
+    volume: -3
+    sound:
+      path: /Audio/_Harmony/Ambience/nukeTick.ogg
+  # Harmony Change End
 
 - type: entity
   parent: NuclearBomb
