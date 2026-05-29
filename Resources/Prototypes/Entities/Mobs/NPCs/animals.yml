@@ -1547,6 +1547,15 @@
   suffix: NukeOps
   components:
   - type: NukeOperative
+  # Harmony Change - Gives nukie monkey nukie access
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: Access
+    tags:
+    - NuclearOperative
+    - SyndicateAgent
+  # Harmony Change End
 
 - type: entity
   name: kobold
@@ -1707,6 +1716,15 @@
   suffix: NukeOps
   components:
   - type: NukeOperative
+# Harmony Change - Gives nukie kobolds nukie access
+  - type: NpcFactionMember
+    factions:
+    - Syndicate
+  - type: Access
+    tags:
+    - NuclearOperative
+    - SyndicateAgent
+# Harmony Change End
 
 - type: entity
   name: guidebook monkey
