@@ -106,7 +106,7 @@
   - type: Rummager
   - type: RatKing
     hungerPerArmyUse: 25
-    hungerPerDomainUse: 25 #Harmony Change - from 50 to 25, see?
+    hungerPerDomainUse: 25 # Harmony Change - from 50 to 25, see?
   - type: MobsterAccent
   - type: Speech
     speechVerb: SmallMob
@@ -231,7 +231,7 @@
   - type: MobThresholds
     thresholds:
       0: Alive
-      30: Dead #Harmony Change - removes crit state
+      30: Dead # Harmony Change - removes crit state
   - type: Destructible
     thresholds:
     - trigger:
